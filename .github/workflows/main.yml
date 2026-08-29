@@ -20,3 +20,8 @@ jobs:
      - name: Build the application 
        run: npm run build  
        # this will build the application and create a dist folder
+     - name: Upload the build from runner to the github repo 
+       uses: actions/upload-artifact@v7
+       with: 
+        name: buildfile  # this is the name of the artifact which will be created in the github repo
+        path: dist
