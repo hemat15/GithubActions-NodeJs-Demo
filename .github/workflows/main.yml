@@ -1,5 +1,5 @@
 name: Build NodeJs application
-on: push  # when ever there is a commit in the repo than run the workflow 
+on: workflow_dispatch  # when ever there is a commit in the repo than run the workflow 
 jobs:
   job_build:  # this is name of the job 
     runs-on: ubuntu-latest  # this is the VM where the job will run
